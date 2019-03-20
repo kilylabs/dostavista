@@ -247,7 +247,7 @@ class Order extends BaseOrder
 
     public function getPayment(): float
     {
-        return $this->payment;
+        return $this->payment ?: 0.0;
     }
 
     public function getCourier(): Courier
